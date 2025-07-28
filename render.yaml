@@ -3,7 +3,13 @@ services:
     name: civil-unrest-forecaster-backend
     env: python
     runtime: python
+    plan: free
+    region: oregon
+    branch: main
+
     buildCommand: pip install -r requirements-deploy.txt
     startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
-    plan: free
-    branch: main
+
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.13
