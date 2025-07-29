@@ -7,9 +7,9 @@ app = FastAPI()
 
 # Set up file paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-model_path = os.path.join(BASE_DIR, "Output", "rf_model.pkl")
-preprocessor_path = os.path.join(BASE_DIR, "Output", "preprocessor.pkl")
-file_path = os.path.join(BASE_DIR, "Input", "unrest_hold_out.csv")
+model_path = "Output/rf_model.pkl"
+preprocessor_path = "Output/preprocessor.pkl"
+file_path = "Input/unrest_hold_out.csv"
 
 # Load model and preprocessor
 model = joblib.load(model_path)
