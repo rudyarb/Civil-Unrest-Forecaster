@@ -13,10 +13,5 @@ In order to set up the proper virtual environment and requirements to run the no
    iv. python -m ipykernel install --user --name=<env-name> --display-name "Python (<env-name>)"
 3. Navigate to the directory where you downloaded the notebook to and run Jupyter Notebook by executing this command: jupyter notebook
 
-In order to run the web application where will be able to select a region, select a month, and view the probability of unrest, please follow the instructions below:
-
-1. Open another Anaconda prompt and navigate to the folder where the repository is
-2. Run this command: streamlit run unrest_predict.py
-
-The web page will appear in the browser you are using.
+In order to view the online dashboard where you will be able to select a region, select a month, and view the probability of unrest, please visit this link: https://civil-unrest-forecaster.vercel.app/
    
